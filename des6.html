@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="est.css">
+</head>
+<body>
+    <div class="card">
+        <div class="imgBox">
+            <img src="shs6.png" alt="shoe">
+        </div>
+        <div class="details">
+            <h3>Botas <br> <span>para Dama</span></h3>
+            <h4>Detalles</h4>
+            <p>Realizados con interior acolchado, cierre lateral, plantilla con diseño</p>
+            <h4>Talla</h4>
+            <ul class="size">
+                <li onclick="selectSizeAndOrder('34')">34</li>
+                <li onclick="selectSizeAndOrder('35')">35</li>
+                <li onclick="selectSizeAndOrder('40')">40</li>
+                <li onclick="selectSizeAndOrder('41')">41</li>
+                <li onclick="selectSizeAndOrder('44')">44</li>
+            </ul>
+            <div class="group">
+                <h2> <sup>Bs.</sup>165</h2>
+                <a href="#" onclick="selectSizeAndOrder()">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectSizeAndOrder(size) {
+            const modelo = "Botas para Dama";
+            const numeroWhatsApp = '59176572602';
+
+            if (size) {
+                const mensaje = `Hola, estoy interesado en ordenar el modelo ${modelo} en la talla ${size}. ¿Cómo procedo?`;
+
+                // Construir la URL de WhatsApp
+                const enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+
+                // Abrir la URL en una nueva pestaña o ventana
+                window.open(enlaceWhatsApp, '_blank');
+            } else {
+                alert('Por favor, selecciona una talla antes de realizar la compra.');
+            }
+        }
+    </script>
+</body>
+</html>

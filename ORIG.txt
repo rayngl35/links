@@ -1,0 +1,10 @@
+QRCODE.JS
+https://davidshimjs.github.io/qrcodejs/
+LIBRERIA
+https://cdnjs.com/libraries/qrcodejs
+CODIGO LINK AUTOMATICO
+https://es.stackoverflow.com/questions/242657/c%C3%B3mo-abrir-enlace-autom%C3%A1ticamente-despu%C3%A9s-de-cierto-tiempo
+
+
+GENERATE AND READ NODE.JS
+https://libreriasjs.com/libreria-javascript-crear-y-leer-qrs-qrcode-y-jsqr/#tutorial
